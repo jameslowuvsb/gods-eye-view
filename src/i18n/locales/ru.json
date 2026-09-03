@@ -3070,5 +3070,22 @@
   "Your choice applies now, but could not be saved.": "Ваш выбор применён, но сохранить его не удалось.",
   "Voice replies appear here.": "Здесь появляются голосовые ответы.",
   "Preview is off.": "Предпросмотр отключён.",
-  "Automatic stop is unavailable for this voice connection.": "Автоматическая остановка недоступна для этого голосового подключения."
+  "Automatic stop is unavailable for this voice connection.": "Автоматическая остановка недоступна для этого голосового подключения.",
+  "CHECKING": "ПРОВЕРКА",
+  "KEY SET": "КЛЮЧ ЗАДАН",
+  "NO KEY": "НЕТ КЛЮЧА",
+  "DOWN": "НЕДОСТУПЕН",
+  "NO ANSWER": "НЕТ ОТВЕТА",
+  "API HEALTH CHECK UNAVAILABLE": "ПРОВЕРКА API НЕДОСТУПНА",
+  "CHECKING APIS {settled}/{total}": "ПРОВЕРКА API {settled}/{total}",
+  "CHECKING APIS": "ПРОВЕРКА API",
+  "{count} LIVE": "{count} ОНЛАЙН",
+  "{count} DEGRADED": "{count} С ПЕРЕБОЯМИ",
+  "{count} NO KEY": "{count} БЕЗ КЛЮЧА",
+  "{count} DOWN": "{count} НЕДОСТУПНО",
+  "{count} UNANSWERED": "{count} БЕЗ ОТВЕТА",
+  "API HEALTH: {names}": "СОСТОЯНИЕ API: {names}",
+  "CONTINUE ▸ {seconds}": "ПРОДОЛЖИТЬ ▸ {seconds}",
+  "CONTINUE ▸": "ПРОДОЛЖИТЬ ▸",
+  "API health": "Состояние API"
 }

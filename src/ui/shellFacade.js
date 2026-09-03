@@ -1220,6 +1220,14 @@ export class ShellFacade {
   }
 
   /**
+   * Public entry to the top-center status banner for startup-time callers
+   * (the API health roster). Same dwell rules as internal notices.
+   */
+  notifyStatus(message, options = {}) {
+    return this._showGlobalStatusNotice(message, options);
+  }
+
+  /**
    * 500 ms DOM ticker for the traffic sync chip (was per-frame). It also
    * polls the loading chip as a safety net: a camera-driven layer can flip
    * its own `stats.loading` without emitting a manager event, and that is

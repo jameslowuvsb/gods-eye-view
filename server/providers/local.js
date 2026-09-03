@@ -29,6 +29,8 @@ import { gnssIntegrityProxy } from './gnssIntegrity.js';
 import { ghostMapsProxy } from './ghostMaps.js';
 import { cycloneProxy } from './cyclones.js';
 import { windProxy } from './wind.js';
+import { getOpenSkyToken } from './aircraft/opensky.js';
+import { apiHealthProxy } from '../../src/data/apiHealth.js';
 
 /**
  * Construct the local provider plugins in their established order.
@@ -66,6 +68,7 @@ function localProviderPlugins({ realtime, gemini } = {}) {
     firePerimetersProxy(),
     gnssIntegrityProxy(),
     ghostMapsProxy(),
+    apiHealthProxy({ getOpenSkyToken }),
     keySetupEndpoint(),
   ];
 }
