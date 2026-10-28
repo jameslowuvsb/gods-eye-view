@@ -3001,5 +3001,22 @@
   "Your choice applies now, but could not be saved.": "Tu elección se aplica ahora, pero no se pudo guardar.",
   "Voice replies appear here.": "Las respuestas de voz aparecen aquí.",
   "Preview is off.": "La vista previa está desactivada.",
-  "Automatic stop is unavailable for this voice connection.": "La parada automática no está disponible para esta conexión de voz."
+  "Automatic stop is unavailable for this voice connection.": "La parada automática no está disponible para esta conexión de voz.",
+  "CHECKING": "COMPROBANDO",
+  "KEY SET": "CLAVE CONFIGURADA",
+  "NO KEY": "SIN CLAVE",
+  "DOWN": "CAÍDO",
+  "NO ANSWER": "SIN RESPUESTA",
+  "API HEALTH CHECK UNAVAILABLE": "COMPROBACIÓN DE APIS NO DISPONIBLE",
+  "CHECKING APIS {settled}/{total}": "COMPROBANDO APIS {settled}/{total}",
+  "CHECKING APIS": "COMPROBANDO APIS",
+  "{count} LIVE": "{count} EN VIVO",
+  "{count} DEGRADED": "{count} DEGRADADOS",
+  "{count} NO KEY": "{count} SIN CLAVE",
+  "{count} DOWN": "{count} CAÍDOS",
+  "{count} UNANSWERED": "{count} SIN RESPUESTA",
+  "API HEALTH: {names}": "ESTADO DE APIS: {names}",
+  "CONTINUE ▸ {seconds}": "CONTINUAR ▸ {seconds}",
+  "CONTINUE ▸": "CONTINUAR ▸",
+  "API health": "Estado de las APIs"
 }

@@ -8,6 +8,11 @@ export function startApplicationChrome({
   signal,
   initializeWelcome = initFirstRunExperience,
   initializeSettings,
+  // Extra readiness the cover waits on (e.g. the API health roster); a
+  // rejection never blocks the reveal.
+  ready,
+  // Called once, after the welcome UI has had its chance to appear.
+  onRevealed,
 }) {
   let disposed = false;
   let firstRun;
@@ -22,8 +27,16 @@ export function startApplicationChrome({
     firstRun = initializeWelcome?.({ styleManager, dataManager });
     clearTimeout(revealTimer);
     loadingScreen.removeEventListener('transitionend', revealFirstRun);
+    onRevealed?.();
   };
-  void Promise.all([styleManager.initialRestorePromise, minimumDelay])
+  const readiness = Promise.resolve(ready).catch(() => {
+    /* A failed readiness probe reports through its own surface. */
+  });
+  void Promise.all([
+    styleManager.initialRestorePromise,
+    minimumDelay,
+    readiness,
+  ])
     .catch(() => {
       /* Restoration reports its own outcome through the controls. */
     })
